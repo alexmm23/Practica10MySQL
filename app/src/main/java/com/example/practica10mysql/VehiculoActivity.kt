@@ -173,7 +173,16 @@ class VehiculoActivity : AppCompatActivity() {
                     limpiarCampos()
                 }
                 showAlertDialog("Eliminación", response.message)
-            } catch (e: Exception) {
+            } catch (e: HttpException) {
+                if (e.code() == 404) {
+                    showAlertDialog(
+                        "Error al eliminar el vehículo",
+                        "El vehículo no existe en la base de datos"
+                    )
+                }
+                Log.e("VehicleDeletionError", "Error: ${e.message}")
+            }
+            catch (e: Exception) {
                 Log.e("VehicleDeletionError", "Error: ${e.message}")
             }
         }
