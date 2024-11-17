@@ -46,7 +46,8 @@
         android:id="@+id/registrarButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar Vehículo" />
+        android:text="Registrar Vehículo"
+        android:backgroundTint="#581845"/>
 
     <Button
         android:id="@+id/actualizarButton"
@@ -58,13 +59,17 @@
         android:id="@+id/eliminarButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Eliminar Vehículo" />
+        android:text="Eliminar Vehículo"
+        android:backgroundTint="#f12d2d"
+        />
 
     <Button
         android:id="@+id/mostrarButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mostrar Vehículos" />
+        android:text="Mostrar Vehículos"
+        android:backgroundTint="#00adf3"
+        />
     <Button
         android:id="@+id/buscarButton"
         android:layout_width="match_parent"
