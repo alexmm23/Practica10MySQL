@@ -28,7 +28,7 @@ class VehiculoAdapter(private val vehiculos: List<Vehicle>) :
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: VehiculoViewHolder, position: Int) {
         val vehiculo = vehiculos[position]
-        holder.marcaTextView.text = "Marca: ${vehiculo.brand}"
+        holder.marcaTextView.text = "Id:${vehiculo.id}\nMarca: ${vehiculo.brand}"
         holder.modeloTextView.text = "Modelo: ${vehiculo.model}"
         holder.anioTextView.text = "Año: ${vehiculo.year}"
         holder.colorTextView.text = "Color: ${vehiculo.color}"
